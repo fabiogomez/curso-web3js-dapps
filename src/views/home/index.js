@@ -42,6 +42,7 @@ const Home = () => {
       .mint()
       .send({
         from: account,
+        value: 1e18,
       })
       .on("transactionHash", (txHash) => {
         toast({
